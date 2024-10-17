@@ -1,0 +1,27 @@
+ec2-user
+sudo dnf install mariadb105
+type y
+mysql -h rdsendpoint -P 3306 -u admin -p
+enter pass
+
+
+policy 
+{ "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::staticwebsite2.com/*"
+    }]}
+
+
+create database dbname;
+use dbname;
+create table tblname (name varchar(20),roll_no int);
+INSERT INTO tblname (name, roll_no) VALUES ('John', 1), ('Alice', 2);
+select*from tablename;
+
+select * from table1;
+insert into table1 value{'key':'oi','Name':'midhuna'};

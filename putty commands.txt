@@ -25,3 +25,5 @@ select*from tablename;
 
 select * from table1;
 insert into table1 value{'key':'oi','Name':'midhuna'};
+
+lsblk

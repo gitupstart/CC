@@ -24,6 +24,6 @@ INSERT INTO student (name, roll_no) VALUES ('John', 1), ('Alice', 2);
 select*from student;
 
 select * from student;
-insert into student value{'key':'oi','Name':'midhuna'};
+insert into student value{'key':'oi','Name':'X'};
 
 lsblk

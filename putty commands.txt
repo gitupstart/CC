@@ -23,7 +23,10 @@ create table student (name varchar(20),roll_no int);
 INSERT INTO student (name, roll_no) VALUES ('John', 1), ('Alice', 2);
 select*from student;
 
-select * from student;
-insert into student value{'key':'oi','Name':'X'};
+
+insert into example value{'tablekey':'Heello','Name':'Alice'};
+SELECT * FROM example;
+UPDATE example SET Name = 'Alice Updated' WHERE tablekey = 'Heello';
+DELETE FROM example WHERE tablekey = 'Heello';
 
 lsblk

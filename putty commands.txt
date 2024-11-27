@@ -1,7 +1,7 @@
 ec2-user
 sudo dnf install mariadb105
 type y
-mysql -h rdsendpoint -P 3306 -u admin -p
+mysql -h rdsdbendpoint -P 3306 -u admin -p
 enter pass
 
 
@@ -19,11 +19,11 @@ policy
 
 create database dbname;
 use dbname;
-create table tblname (name varchar(20),roll_no int);
-INSERT INTO tblname (name, roll_no) VALUES ('John', 1), ('Alice', 2);
-select*from tablename;
+create table student (name varchar(20),roll_no int);
+INSERT INTO student (name, roll_no) VALUES ('John', 1), ('Alice', 2);
+select*from student;
 
-select * from table1;
-insert into table1 value{'key':'oi','Name':'midhuna'};
+select * from student;
+insert into student value{'key':'oi','Name':'midhuna'};
 
 lsblk
